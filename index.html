@@ -3,87 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcopio - Portfolio</title>
     <link rel="stylesheet" href="includes/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <script src="script/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Personal Portfolio</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/ICON.png" alt="LOGO">
-            </a>
-        </div>
-
-        <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">About</a></li>
-            <li class="link"><a href="#">Contact</a></li>
-        </ul>
-        <a href="#"class="btn">Click Me!</a>
-    </nav>
-
-    <header class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>THIS IS A PERSONAL PORTFOLIO WEBSITE</h4>
-            <H1>Hey! I'm <span>SAI</span>, Here to help you today</H1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, 
-                rerum odio a cum quaerat consequatur aliquam quasi natus hic, 
-                numquam molestias dolor voluptates aliquid beatae velit soluta 
-                distinctio! Itaque, odio?
-            </p>
-            <a class="btn" href="#">GET STARTED</a>
-        </div>
-        <div class="image">
-            <img src="images/ICON2.png">
+    <!-- Navigation -->
+    <header class="header">
+        <div>
+            <nav class="navMenu">
+                <ul class="nav-list">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="dot"></div>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="container">
-        <h2 class="header">ABOUT</h2>
-        <div class="projects">
-            <div class="card">
-                <span><i class="ri-git-repository-fill"></i></span>
-                <h4>Projects</h4>
-                <p>
-                    <li>Snake Game (Python)</li>
-                    <li>Pac-Man Game (Python)</li>
-                    <li>This Website (HTML, CSS)</li>
-                </p>
-                <a href="https://github.com/sailikesrice?tab=repositories">View all<i class="ri-arrow-right-s-fill"></i></a>
-                
+    <div class="container">
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <div class="aboutme-card">
+                <div class="container about-container">
+                    <p class="about-text">Hi! My name is Cyruz Porcopio and welcome to my personal portfolio. I am a computer science student of Lyceum of the Philippines University. I design websites as a hobby and actively studying game development.</p>
+                </div>
             </div>
-            <div class="card">
-                <span><i class="ri-gamepad-line"></i></span>
-                <h4>Skills</h4>
-                <p>
-                    <li><i class="ri-html5-fill"></i>HTML5</li>
-                    <li><i class="ri-css3-fill"></i>CSS3</li>
-                    <li><i class="ri-javascript-fill"></i>JavaScript</li>
-                </p>
-            </div>
-            <div class="card">
-                <span><i class="ri-gamepad-line"></i></span>
-                <h4>Coming Soon</h4>
-                
-            </div>
-            <div class="card">
-                <span><i class="ri-gamepad-line"></i></span>
-                <h4>Coming Soon</h4>
-                <p>
-                    
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <div id="footer-card">
-        <p>Copyright &copy; Cyruz Porcopio 2024 | Designed by
-        <a href="https://www.youtube.com/">Cyruz Porcopio</a>
-        </p>
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-title">Click the cards to redirect you to the github page.</p>
+            <div class="project-container">
+                <a href="https://github.com/sailikesrice/Snake-Game" class="projects-card">
+                    <div class="first-content">
+                        <p class="project-title">Snake Game <i class="fa-solid fa-dragon"></i></p>
+                    </div>
+                    <div class="second-content">
+                        <p class="project-details">This game allows you to control a snake to eat food and grow longer. It features a simple GUI and is built using Python.</p>
+                    </div>
+                </a>
+        
+                <a href="https://github.com/sailikesrice/Pac-Man-Game" class="projects-card">
+                    <div class="first-content">
+                        <p class="project-title">Pac-Man <i class="ri-game-fill"></i></p>
+                    </div>
+                    <div class="second-content">
+                        <p class="project-details">This classic arcade game has been recreated using Python and the Pygame library, featuring the iconic gameplay.</p>
+                    </div>
+                </a>
+        
+                <div href="sailikesrice.github.io" class="projects-card">
+                    <div class="first-content">
+                        <p class="project-title">Web Dev <i class="ri-javascript-fill"></i> <i class="ri-html5-fill"></i> <i class="ri-css3-fill"></i></p>
+                    </div>
+                    <div class="second-content">
+                        <p class="project-details">This portfolio showcases my projects and skills, built using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="button-container">
+                    <button class="contact-button" href="https://github.com/sailikesrice">
+                        <span><i class="ri-github-line"></i></span>
+                    </button>
+                    <button class="contact-button" href="#">
+                        <span><i class="ri-discord-line"></i></span>
+                    </button>
+                    <button class="contact-button" href="#">
+                        <span><i class="ri-instagram-line"></i></span>
+                    </button>
+                </div>
+                <form class="form">
+                    <div class="title">Welcome,<br><span>enter your email to contact me.</span></div>
+                    <input class="input" name="email" placeholder="Email" type="email">
+                    <input class="input" name="message" placeholder="Message" type="message">
+                    <div class="login-with">
+                      <div class="button-log"><b>t</b></div>
+                      <div class="button-log">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.6934px" viewBox="0 0 56.6934 56.6934" version="1.1" style="enable-background:new 0 0 56.6934 56.6934;" id="Layer_1" height="56.6934px" class="icon"><path d="M51.981,24.4812c-7.7173-0.0038-15.4346-0.0019-23.1518-0.001c0.001,3.2009-0.0038,6.4018,0.0019,9.6017  c4.4693-0.001,8.9386-0.0019,13.407,0c-0.5179,3.0673-2.3408,5.8723-4.9258,7.5991c-1.625,1.0926-3.492,1.8018-5.4168,2.139  c-1.9372,0.3306-3.9389,0.3729-5.8713-0.0183c-1.9651-0.3921-3.8409-1.2108-5.4773-2.3649  c-2.6166-1.8383-4.6135-4.5279-5.6388-7.5549c-1.0484-3.0788-1.0561-6.5046,0.0048-9.5805  c0.7361-2.1679,1.9613-4.1705,3.5708-5.8002c1.9853-2.0324,4.5664-3.4853,7.3473-4.0811c2.3812-0.5083,4.8921-0.4113,7.2234,0.294  c1.9815,0.6016,3.8082,1.6874,5.3044,3.1163c1.5125-1.5039,3.0173-3.0164,4.527-4.5231c0.7918-0.811,1.624-1.5865,2.3908-2.4196  c-2.2928-2.1218-4.9805-3.8274-7.9172-4.9056C32.0723,4.0363,26.1097,3.995,20.7871,5.8372  C14.7889,7.8907,9.6815,12.3763,6.8497,18.0459c-0.9859,1.9536-1.7057,4.0388-2.1381,6.1836  C3.6238,29.5732,4.382,35.2707,6.8468,40.1378c1.6019,3.1768,3.8985,6.001,6.6843,8.215c2.6282,2.0958,5.6916,3.6439,8.9396,4.5078  c4.0984,1.0993,8.461,1.0743,12.5864,0.1355c3.7284-0.8581,7.256-2.6397,10.0725-5.24c2.977-2.7358,5.1006-6.3403,6.2249-10.2138  C52.5807,33.3171,52.7498,28.8064,51.981,24.4812z"></path></svg>
+                      </div>
+                      <div class="button-log">
+                        <svg class="icon" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"></path></svg>
+                      </div>
+                    </div>
+                    <button class="button-confirm">Let`s go →</button>
+                  </form>
+            </div>
+        </section>
     </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-text">&copy; 2024 Cyruz Porcopio. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
